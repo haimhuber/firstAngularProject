@@ -1,0 +1,11 @@
+<h3>Hello {{ username }}!</h3>
+
+<img [src]="imageUrl" alt="Profile">
+
+<input [(ngModel)]="username" placeholder="Enter your name">
+
+<button (click)="sayHello()">Greet</button>
+
+<div [class.active]="isActive">Active Block</div>
+
+<p [style.color]="isError ? 'red' : 'green'">This is a message</p>
