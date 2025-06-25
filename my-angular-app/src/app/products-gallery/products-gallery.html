@@ -1,0 +1,9 @@
+<div class="gallery">
+    <div class="product-card" *ngFor="let product of product">
+        <h2>{{ product.name }}</h2>
+        <p>Price: ${{ product.price }}</p>
+        <p [class.out-of-stock]="!product.inStock">
+            {{ product.inStock ? 'In Stock' : 'Out of Stock' }}
+        </p>
+    </div>
+</div>

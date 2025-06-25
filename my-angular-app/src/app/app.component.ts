@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { PersonCardComponent } from './person-card/person-card.component';
 import { PeopleGalleryComponent } from './people-gallery/people-gallery.component';
 import { BindingDemoComponent } from './binding-demo/binding-demo.component';
+import { ProductsGallery } from './products-gallery/products-gallery';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, PersonCardComponent, PeopleGalleryComponent, BindingDemoComponent],
+  imports: [ProductsGallery],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
